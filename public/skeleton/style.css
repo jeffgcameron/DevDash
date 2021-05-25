@@ -1,0 +1,56 @@
+header {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+h1 {
+  display: inline;
+}
+.hamburger {
+  float: right;
+  display: block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.description {
+  width: 75%;
+}
+
+.profile {
+margin-top: 20px;
+text-align: center;
+}
+
+.center {
+  align-items: center;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.log {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.left-nav {
+  text-align: center;
+  height: 100%;
+}
+
+.icons {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 5px;
+}
+
+.form-input {
+  margin-bottom: 5px;
+}

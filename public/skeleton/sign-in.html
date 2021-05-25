@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>DevDash</h1>
+        <i class="hamburger fas fa-align-right"></i>
+      </header>
+
+      <div class="row">
+        <div class="left-nav col-md-2">
+          <div class="nav-card center card">
+            <div class="card-body">
+              <i class="icons fas fa-home"></i>
+              <br />
+              <i class="icons fas fa-info"></i>
+              <br />
+              <i class="icons fas fa-envelope"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="center card description text-center">
+                <div class="card-body">
+                  <h2>Something catchy. Description of the App</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="log card text-center">
+                <div class="card-body">
+                  <h3 class="card-title" id="login">Login</h3>
+                  <form class="form login-form">
+                    <div class="form-group">
+                      <label for="email-login">Email Address:</label> <br />
+                      <input
+                        type="email"
+                        class="form-input"
+                        type="text"
+                        id="email-login"
+                      />
+                    </div>
+                    <div class="form form-group">
+                      <label for="exampleInputPassword1">Password:</label>
+                      <br />
+                      <input
+                        class="form-input"
+                        type="password"
+                        id="password-login"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-primary" type="submit">
+                        login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="log card text-center">
+                <div class="card-body">
+                  <h3 class="card-title" id="login">Create an Account</h3>
+                  <form class="form signup-form">
+                    <div class="form-group">
+                      <label for="name-signup">Name:</label> <br />
+                      <input class="form-input" type="text" id="name-signup" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email-signup">Email:</label> <br />
+                      <input class="form-input" type="text" id="email-signup" />
+                    </div>
+                    <div class="form-group">
+                      <label for="password-signup">password:</label> <br />
+                      <input
+                        class="form-input"
+                        type="password"
+                        id="password-signup"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-primary" type="submit">
+                        signup
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
