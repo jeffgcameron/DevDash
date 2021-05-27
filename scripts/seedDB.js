@@ -1,0 +1,73 @@
+const mongoose = require("mongoose");
+const db = require("../models");
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
+
+const userSeed = [
+    {
+        name: "Micheal Scott",
+        email: "micheal@paper.com",
+        bio: "Regional Manager of the Scranton branch of Dunder Miflin. Comedic genious. World's best boss",
+        goals: "My goal as a developer is to create an app to store all the dundy winners",
+        languages: ["html"],
+        strengths: "leadership",
+        weaknesses: "Holly"
+    },
+    {
+        name: "Dwight Schrute",
+        email: "dwight@paper.com",
+        bio: "Assistant to Regional Manager. Beet farmer. Volunteer firefighter. Martial arts expert",
+        goals: "Become the best paper salesman in the state of Pennsylvania ",
+        languages: ["node", "mongoose, mySQL"],
+        strengths: "Everything",
+        weaknesses: "Nothing"
+    },
+    {
+        name: "Jim Halpert",
+        email: "jim@paper.com",
+        bio: "Father of Cece and wife to Pam. Big Tuna",
+        goals: "Balance of work and family time, while able to live comfortably",
+        languages: ["html", "css", "javascript", "react"],
+        strengths: "Pranks",
+        weaknesses: "Easily distracted by the receptionist"
+    },
+    {
+        name: "Andy Bernard",
+        email: "andy@paper.com",
+        bio: "Cornell grad. Acapella member. Anger management graduate",
+        goals: "Impress my father by creating an app that make me a lot of money so i can focus on my passion for singing",
+        languages: ["html", "css", "javascript"],
+        strengths: "Killer Vocals",
+        weaknesses: "Living up to expectations"
+    },
+    {
+        name: "Kevin Malone",
+        email: "kevin@paper.com",
+        bio: "I am Kevin. Chili champion",
+        goals: "learn teh basicas of coding",
+        languages: ["html"],
+        strengths: "Candy",
+        weaknesses: "Althletics"
+    },
+    {
+        name: "Toby Flederson",
+        email: "toby@paper.com",
+        bio: "Head of HR. Love speding time with my daughter. Divorced",
+        goals: "move to Costa Rica to live out my dreams",
+        languages: ["javascript"],
+        strengths: "Calm relaxing voice",
+        weaknesses: "Standing up for myself"
+    },
+];
+
+db.User
+  .remove({})
+  .then(() => db.User.collection.insertMany(userSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
