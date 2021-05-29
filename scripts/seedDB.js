@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
+//need to update "mongodb://localhost/reactcms"
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
 
 const userSeed = [
     {
+        thumbnail: "",
         name: "Micheal Scott",
         email: "micheal@paper.com",
         bio: "Regional Manager of the Scranton branch of Dunder Miflin. Comedic genious. World's best boss",
@@ -14,6 +16,7 @@ const userSeed = [
         weaknesses: "Holly"
     },
     {
+        thumbnail: "",
         name: "Dwight Schrute",
         email: "dwight@paper.com",
         bio: "Assistant to Regional Manager. Beet farmer. Volunteer firefighter. Martial arts expert",
@@ -23,6 +26,7 @@ const userSeed = [
         weaknesses: "Nothing"
     },
     {
+        thumbnail: "",
         name: "Jim Halpert",
         email: "jim@paper.com",
         bio: "Father of Cece and wife to Pam. Big Tuna",
@@ -32,6 +36,7 @@ const userSeed = [
         weaknesses: "Easily distracted by the receptionist"
     },
     {
+        thumbnail: "",
         name: "Andy Bernard",
         email: "andy@paper.com",
         bio: "Cornell grad. Acapella member. Anger management graduate",
@@ -41,6 +46,7 @@ const userSeed = [
         weaknesses: "Living up to expectations"
     },
     {
+        thumbnail: "",
         name: "Kevin Malone",
         email: "kevin@paper.com",
         bio: "I am Kevin. Chili champion",
@@ -50,6 +56,7 @@ const userSeed = [
         weaknesses: "Althletics"
     },
     {
+        thumbnail: "",
         name: "Toby Flederson",
         email: "toby@paper.com",
         bio: "Head of HR. Love speding time with my daughter. Divorced",
