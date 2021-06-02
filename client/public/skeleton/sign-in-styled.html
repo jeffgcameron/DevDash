@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>DevDash | Home</title>
+    </head>
+    <body>
+        <div class="my-navbar">
+            <ul class="nav-ul">
+                <li><a href="#"><span class="icon"><i class="fas fa-home"></i></span><span class="title">Home</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-info-circle"></i></span><span class="title">About</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-envelope"></i></span><span class="title">Contact Us</span></a></li>
+            </ul>
+        </div>
+        <div class="toggle" onclick="toggleMenu()">
+            <script>
+                function toggleMenu() {
+                    let navbar = document.querySelector('.my-navbar');
+                    let toggle = document.querySelector('.toggle');
+                    navbar.classList.toggle('active');
+                    toggle.classList.toggle('active');
+                }
+            </script>
+        </div>
+        <div id="wrapperHeader">
+            <div id="header">
+                <img src="../images/DevDash Full.png" alt="logo" style="width: 100%;"/>
+            </div>
+        </div>
+        <div class="container description">
+            <p><span style="color:#4077CE">Collaborate with like-minded developers</span> <span style="color:#9143F0">to ensure your visions become your reality.</span></p>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="log card text-center">
+                    <div class="card-body">
+                        <h3 class="card-title" id="login">Login</h3>
+                        <form class="form login-form">
+                            <div class="form-group">
+                                <label for="email-login">Email Address:</label>
+                                <br/>
+                                <input type="email" class="form-input" type="text" id="email-login"/>
+                            </div>
+                            <div class="form form-group">
+                                <label for="exampleInputPassword1">Password:</label>
+                                <br/>
+                                <input class="form-input" type="password" id="password-login"/>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit">
+                                    login
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+    </body>
+</html>
