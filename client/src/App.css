@@ -2,7 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +37,11 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
