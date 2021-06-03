@@ -17,11 +17,12 @@ class Navbar extends Component {
                 <ul className="nav-ul" /*className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}*/>
                     {MenuItems.map((item, index) => {
                         return (
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
-                                    {item.icon} {item.title}
-                                </a>
-                            </li>
+                            // <li key={index}>
+                            //     <a className={item.cName} href={item.url}>
+                            //         {item.icon} {item.title}
+                            //     </a>
+                            // </li>
+                            <li className="list-items"><a href={item.url}><span class="icon"><i class={item.iconCName}></i></span><span class="title">{item.title}</span></a></li>
                         )
                     })}
                     
