@@ -13,7 +13,8 @@ const userSeed = [
         goals: "My goal as a developer is to create an app to store all the dundy winners",
         languages: ["html"],
         strengths: "leadership",
-        weaknesses: "Holly"
+        weaknesses: "Holly",
+        password: "micheal"
     },
     {
         thumbnail: "",
@@ -23,7 +24,8 @@ const userSeed = [
         goals: "Become the best paper salesman in the state of Pennsylvania ",
         languages: ["node", "mongoose, mySQL"],
         strengths: "Everything",
-        weaknesses: "Nothing"
+        weaknesses: "Nothing",
+        password: "dwight"
     },
     {
         thumbnail: "",
@@ -33,7 +35,8 @@ const userSeed = [
         goals: "Balance of work and family time, while able to live comfortably",
         languages: ["html", "css", "javascript", "react"],
         strengths: "Pranks",
-        weaknesses: "Easily distracted by the receptionist"
+        weaknesses: "Easily distracted by the receptionist",
+        password: "jim"
     },
     {
         thumbnail: "",
@@ -43,7 +46,8 @@ const userSeed = [
         goals: "Impress my father by creating an app that make me a lot of money so i can focus on my passion for singing",
         languages: ["html", "css", "javascript"],
         strengths: "Killer Vocals",
-        weaknesses: "Living up to expectations"
+        weaknesses: "Living up to expectations",
+        password: "andy"
     },
     {
         thumbnail: "",
@@ -53,7 +57,8 @@ const userSeed = [
         goals: "learn teh basicas of coding",
         languages: ["html"],
         strengths: "Candy",
-        weaknesses: "Althletics"
+        weaknesses: "Althletics",
+        password: "kevin"
     },
     {
         thumbnail: "",
@@ -63,7 +68,8 @@ const userSeed = [
         goals: "move to Costa Rica to live out my dreams",
         languages: ["javascript"],
         strengths: "Calm relaxing voice",
-        weaknesses: "Standing up for myself"
+        weaknesses: "Standing up for myself",
+        password: "toby"
     },
 ];
 
