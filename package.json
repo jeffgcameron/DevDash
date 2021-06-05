@@ -4,7 +4,16 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
   "dependencies": {
-    "@material-ui/core": "^4.11.4"
+    "@material-ui/core": "^4.11.4",
+    "concurrently": "^6.2.0",
+    "connect-mongoose-session-store": "^2.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.12.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reactstrap": "^8.9.0"
   },
   "devDependencies": {},
   "scripts": {

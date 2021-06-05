@@ -27,8 +27,7 @@ function App() {
 
   return (
     <div>
-      <Nav />
-      <Jumbotron />
+
       <Container>
         <Row>
           <Col size="md-12">
