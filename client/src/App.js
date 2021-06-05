@@ -6,12 +6,12 @@ import Logo from "./components/DevDash-Logo/devlogo"
 // import Register from "./components/Register/register"
 import Signup from "./pages/Signup"
 
+
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Logo />
-      <Signup />
     </div>
   );
 }
