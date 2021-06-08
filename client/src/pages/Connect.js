@@ -1,14 +1,23 @@
-import React, { useState } from "react";
-import SearchForm from "./components/SearchForm";
-import SearchButton from "./components/SearchButton";
-import API from "./utils/API";
-import { UserList, UserListItem } from "./components/Directory";
-import { Container, Row, Col } from "./components/Grid";
+import React, { useState, useEffect } from "react";
+import SearchForm from "../components/SearchForm";
+import SearchButton from "../components/SearchButton";
+import API from "../utils/API";
+import { UserList, UserListItem } from "../components/Directory";
+import { Container, Row, Col } from "../components/Grid";
+import Navbar from "../components/Navbar/navbar"
+import Logo from "../components/DevDash-Logo/devlogo"
 
-function App() {
+function Connect() {
 
   const [users, setUsers] = useState([]);
   const [userSearch, setUserSearch] = useState("");
+
+  useEffect(() => {
+    API.getUsers(userSearch)
+   .then(res => setUsers(res.data))
+   .catch(err => console.log(err));
+  }, []);
+
 
   const handleInputChange = event => {
     // Destructure the name and value properties off of event.target
@@ -27,15 +36,16 @@ function App() {
 
   return (
     <div>
-      <Nav />
-      <Jumbotron />
+      <Navbar />
       <Container>
+      <Logo />
+        <Row><h1 className="text-center">Who would you like to connect with?</h1> </Row>
         <Row>
           <Col size="md-12">
             <form>
               <Container>
                 <Row>
-                  <Col size="xs-9 sm-10">
+                  <Col size="xs-9 sm-10 md-3">
                     <SearchForm
                       name="UserSearch"
                       value={userSearch}
@@ -43,7 +53,7 @@ function App() {
                       placeholder="Search For a User"
                     />
                   </Col>
-                  <Col size="xs-3 sm-2">
+                  <Col size="xs-3 sm-2 md-2">
                     <SearchButton
                       onClick={handleFormSubmit}
                       type="success"
@@ -60,7 +70,7 @@ function App() {
         <Row>
           <Col size="xs-12">
             {!users.length ? (
-              <h1 className="text-center">No Recipes to Display</h1>
+              <h1 className="text-center">No users to Display</h1>
             ) : (
               <UserList>
                 {users.map(users => {
@@ -84,4 +94,4 @@ function App() {
   );
 }
 
-export default App;
+export default Connect;

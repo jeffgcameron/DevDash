@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
     strengths: {
-        type: String,
+        type: Array,
         required: true,
     },
     weaknesses: {

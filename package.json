@@ -5,7 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
-    "@material-ui/icons": "^4.11.2"
+    "@material-ui/icons": "^4.11.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
   },
   "devDependencies": {},
   "scripts": {
