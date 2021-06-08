@@ -33,12 +33,12 @@ const userSchema = new Schema(
       required: false,
     },
     strengths: {
-      type: String,
-      required: false,
+        type: Array,
+        required: true,
     },
     weaknesses: {
-      type: String,
-      required: false,
+        type: Array,
+        required: false,
     },
     password: {
       type: String,
