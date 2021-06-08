@@ -28,11 +28,11 @@ const userSchema = new mongoose.Schema({
         required: false,
     },
     strengths: {
-        type: String,
-        required: false,
+        type: Array,
+        required: true,
     },
     weaknesses: {
-        type: String,
+        type: Array,
         required: false,
     },
     password: {
