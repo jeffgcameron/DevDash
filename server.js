@@ -1,8 +1,30 @@
 const express = require("express");
 const session = require('express-session');
 
+const Store = require('express-session').Store;
+// const MongooseStore = require('mongoose-express-session')(Store);
+
 app = express()
 
+// app.use(require('express-session')({
+//   secret: 'keyboard cat',
+//   resave: false,
+//   rolling: false,
+//   saveUninitialized: true,
+//   store: new MongooseStore({
+//       /* configuration */
+//   })
+// }));
+
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+ 
+};
+
+app.use(session(sess))
 
 const mongoose = require("mongoose");
 const routes = require("./routes");

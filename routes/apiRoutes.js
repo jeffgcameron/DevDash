@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const db = require("../models");
+const withAuth = require("../utils/auth.js")
 
-router.get("/users", (req, res) => {
+router.get("/users", withAuth, (req, res) => {
   // Use a regular expression to search titles for req.query.q
   // using case insensitive match. https://docs.mongodb.com/manual/reference/operator/query/regex/index.html
  
