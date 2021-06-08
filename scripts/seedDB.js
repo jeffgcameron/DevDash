@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 //need to update "mongodb://localhost/reactcms"
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/devdashDB");
 
 const userSeed = [
     {
