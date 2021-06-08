@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const db = require("../models");
+const withAuth = require("../utils/auth.js")
 
 router.get("/user", (req, res) => {
   // Use a regular expression to search titles for req.query.q

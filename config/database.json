@@ -1,7 +1,7 @@
 {
     "development": {
       "database": {
-        "url": "mongodb://localhost/node-react-auth",
+        "url": "mongodb://localhost/devDashDB",
         "options": {
           "useNewUrlParser": true,
           "useUnifiedTopology": true,
@@ -11,7 +11,7 @@
     },
     "test": {
       "database": {
-        "url": "mongodb://localhost/node-react-auth_test",
+        "url": "mongodb://localhost/devdash_test",
         "options": {
           "useNewUrlParser": true,
           "useUnifiedTopology": true,
@@ -21,7 +21,7 @@
     },
     "production": {
       "database": {
-        "url": "mongodb://localhost/node-react-auth_production",
+        "url": "mongodb://localhost/devdash_production",
         "options": {
           "useNewUrlParser": true,
           "useUnifiedTopology": true,
