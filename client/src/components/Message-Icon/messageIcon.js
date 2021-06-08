@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+//import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import ChatIcon from '@material-ui/icons/Chat';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,7 +23,7 @@ function MessageIcon() {
     return (
         <div className={classes.root}>
             <IconButton onClick={handleMessageSubmit}>
-                <MailOutlineIcon />
+                <ChatIcon />
             </IconButton>
         </div>
     )

@@ -9,11 +9,6 @@ router.get("/user", (req, res) => {
  db.User.find({
   languages: { $regex: new RegExp(req.query.q, 'i')}
 })
-
-
-//db.User.find({
- // strengths: { $regex: new RegExp(req.query.q, 'i')}
-//})
   .then(users => res.json(users))
   .catch(err => res.status(422).end());
 });

@@ -10,24 +10,24 @@ function Profile() {
         <body>
             <header>
                 <h1>DevDash</h1>
-                <i class="hamburger fas fa-align-right"></i>
+                <i className="hamburger fas fa-align-right"></i>
             </header>
-            <div class="col-md-10">
-                <div class="center card description text-center">
-                    <div class="card-body">
+            <div className="col-md-10">
+                <div className="center card description text-center">
+                    <div className="card-body">
                         <h2>Create Your Developer Profile</h2>
                     </div>
                 </div>
-                <div class="profile center card">
-                    <div class="center card-body">
+                <div className="profile center card">
+                    <div className="center card-body">
                         <h3>
                             Please fill out the following to complete your developer profile:
               </h3>
-                        <div class="row">
-                            <div class="col-6">
+                        <div className="row">
+                            <div className="col-6">
                                 <Questions />
                             </div>
-                            <div class="col-6">
+                            <div className="col-6">
                                 <Languages />
                                 <BioAndGoals />
                                 <Strengths />

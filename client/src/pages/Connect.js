@@ -37,6 +37,7 @@ function Connect() {
   return (
     <div>
       <Navbar />
+
       <Container>
       <Logo />
         <Row><h1 className="text-center">Who would you like to connect with?</h1> </Row>

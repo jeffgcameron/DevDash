@@ -4,11 +4,12 @@ const Schema = mongoose.Schema;
 const userSchema = new mongoose.Schema({
     thumbnail: {
         type: String,
-        default: ""
+        default: "",
+        required: false
       },
     name: { 
         type: String,
-        required: true
+        required: false
     },
     email: {
         type: String,
@@ -16,21 +17,25 @@ const userSchema = new mongoose.Schema({
     },
     bio: {
         type: String,
-        required: true
+        required: false
     },
     goals: {
         type: String,
-        required: true
+        required: false
     },
     languages: {
         type: Array,
-        required: true,
+        required: false,
     },
     strengths: {
         type: Array,
         required: true,
     },
     weaknesses: {
+        type: Array,
+        required: false,
+    },
+    password: {
         type: String,
         required: true,
     }
