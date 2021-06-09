@@ -1,10 +1,16 @@
 const express = require("express");
 const session = require('express-session');
+const mongoose = require("mongoose");
+const apiRoutes = require("./routes/apiRoutes");
+const app = express();
+const routes = require("./routes");
+// const app = express();
+const PORT = process.env.PORT || 3001;
 
 const Store = require('express-session').Store;
 // const MongooseStore = require('mongoose-express-session')(Store);
 
-app = express()
+//app = express()
 
 // app.use(require('express-session')({
 //   secret: 'keyboard cat',
@@ -26,12 +32,7 @@ const sess = {
 
 app.use(session(sess))
 
-const mongoose = require("mongoose");
-const apiRoutes = require("./routes/apiRoutes");
-const app = express();
-//const routes = require("./routes");
-// const app = express();
-const PORT = process.env.PORT || 3001;
+
 
 
 // Define middleware here
