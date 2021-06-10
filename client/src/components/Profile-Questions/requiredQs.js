@@ -22,8 +22,7 @@ function Questions() {
         <>
             <form className={classes.root} noValidate autoComplete="off">
                 <div>
-                    <TextField required id="standard-required" label="First Name" />
-                    <TextField required id="standard-required" label="Last Name" />
+                    <TextField required id="standard-required" label="Name" />
                     <TextField required id="standard-required" label="Email" />
                 </div>
             </form>
