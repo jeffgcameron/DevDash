@@ -13,7 +13,7 @@ function Connect() {
   const [userSearch, setUserSearch] = useState("");
 
   useEffect(() => {
-    API.getUsers(userSearch)
+    API.getUsers()
    .then(res => setUsers(res.data))
    .catch(err => console.log(err));
   }, []);
