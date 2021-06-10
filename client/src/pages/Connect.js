@@ -71,7 +71,7 @@ function Connect() {
         <Row>
           <Col size="xs-12">
             {!users.length ? (
-              <h1 className="text-center">No users to Display</h1>
+              <h1 className="text-center">No users to display</h1>
             ) : (
               <UserList>
                 {users.map(users => {
@@ -83,6 +83,7 @@ function Connect() {
                       thumbnail={users.thumbnail}
                       bio={users.bio}
                       strengths={users.strengths}
+                      email={users.email}
                     />
                   );
                 })}

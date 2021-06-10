@@ -2,6 +2,7 @@ import React from "react";
 import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 import MessageIcon from "../Message-Icon/messageIcon";
+import { Link } from "react-router-dom";
 
 // Exporting both UsersList and UsersListItem from this file
 
@@ -18,7 +19,10 @@ export function UserListItem({
   languages,
   bio,
   strengths,
+  email
 }) {
+   //const getEmail = console.log(email)
+  //email.map((item, index) => <a href={JSON.stringify(item)}>{console.log("my item:", item)}</a>)
   return (
     <li className="list-group-item">
       <Container>
@@ -50,7 +54,14 @@ export function UserListItem({
             </ul>
           </Col>
           <Col size="xs-8 sm-1">
-            <MessageIcon />
+            <Link to='#'
+              onClick={(e) => {
+                window.location = "mailto:" + email;
+                e.preventDefault();
+              }}>
+              <MessageIcon />
+            </Link>
+
           </Col>
         </Row>
       </Container>
