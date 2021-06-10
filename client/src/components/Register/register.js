@@ -17,7 +17,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // document.location.replace('/profile');
+      document.location.replace('/user');
       console.log("Working");
     } else {
       alert(response.statusText);

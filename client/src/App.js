@@ -8,8 +8,8 @@ import Profile from "./pages/Profile";
 //import Navbar from "./components/Navbar/navbar"
 //import Logo from "./components/DevDash-Logo/devlogo"
 // import Login from "./components/Login/login"
-import Register from "./components/Register/register"
-//import Signup from "./pages/Signup"
+// import Register from "./components/Register/register"
+import Signup from "./pages/Register"
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <div>
         <Switch>
           <Route exact path={["/"]}>
-            <Register />
+            <Signup />
             <Profile />
           </Route>
         </Switch>
