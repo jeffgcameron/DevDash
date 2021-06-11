@@ -8,6 +8,7 @@ const loginFormHandler = async (event) => {
   // Collect values from the login form
   const email = document.querySelector("#email-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
+  const fail = document.querySelector("#fail")
   console.log(password);
   console.log(email);
   if (email && password) {
@@ -25,7 +26,7 @@ const loginFormHandler = async (event) => {
       document.location.replace("/user");
       console.log(response);
     } else {
-      alert(response.statusText);
+      fail.textContent = "Incorrect email or password. Please try again."
     }
   }
 };
@@ -53,13 +54,13 @@ function Login() {
                 id="password-login"
               />
             </div>
-            <div className="form-group">
+            <div className="button-group form-group">
               <button
                 className="btn btn-primary"
                 type="submit"
                 onClick={loginFormHandler}
               >
-                login
+                Login
               </button>
             </div>
             <div className="register">
@@ -74,6 +75,7 @@ function Login() {
                 Dont have an account? Register here!
               </Link>
             </div>
+            <p id="fail"></p>
           </form>
         </div>
       </div>

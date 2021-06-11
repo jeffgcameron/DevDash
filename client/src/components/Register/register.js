@@ -5,6 +5,7 @@ import BioAndGoals from "../Profile-Questions/multilineQs";
 import Strengths from "../Profile-Questions/strengths";
 import Weaknesses from "../Profile-Questions/weaknesses";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
@@ -19,6 +20,7 @@ const signupFormHandler = async (event) => {
   const weaknesses = document.querySelector("#weakness-signup").textContent;
   const languages = document.querySelector("#languages-signup").textContent;
   const name = lastName + " " + firstName;
+
   if (
     name &&
     email &&
@@ -92,7 +94,7 @@ function Register() {
               <Weaknesses  className="form-input" type="checkbox" />
             </div>
 
-            <div className="form-group">
+            <div className="button-group form-group">
               <button
                 className="btn btn-primary"
                 type="submit"

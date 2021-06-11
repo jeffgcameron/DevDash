@@ -1,0 +1,58 @@
+/* body {
+    background-color: #f1f5fc;
+} */
+
+.card {
+    /* background-color: #faf6ff; */
+    border-radius: 10px;
+    border-color: #bdd1f3;
+    
+}
+label {
+    font-family: 'Comfortaa', cursive !important;
+    color:  #9143F0 !important;
+}
+input {
+    color:  #4077CE !important;
+    
+}
+
+textarea {
+    color:  #4077CE !important;
+}
+
+.MuiList-root {
+    color:  #4077CE !important;
+}
+
+.MuiSelect-root {
+    color:  #4077CE !important;
+}
+
+
+h3 {
+    color:  #4077CE ;
+}
+
+a {
+    color:  #9143F0 ;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #4077CE !important;
+    border-color: #4077CE  !important;
+    color:  #faf6ff !important;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #9143F0 !important;
+    border-color: #9143F0 !important;
+    /* color:  #9143F0 !important; */
+}
+
+a:hover {
+    color:  #4077CE ;
+}

@@ -6,6 +6,7 @@ import Profile from "./pages/Profile";
 import Connect from "./pages/Connect";
 import Signup from "./pages/Register";
 import LoginPage from "./pages/Login";
+import Info from "./pages/Info"
 
 
 function App() {
@@ -30,6 +31,11 @@ function App() {
         <Switch>
           <Route exact path={["/profile"]}>
             <Profile />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route exact path={["/user/:id"]}>
+            <Info />
           </Route>
         </Switch>
       </div>

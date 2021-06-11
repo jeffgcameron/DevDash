@@ -77,7 +77,8 @@ function Connect() {
                 {users.map(users => {
                   return (
                     <UserListItem
-                      key={users.name}
+                      key={users._name}
+                      id={users._id}
                       name={users.name}
                       languages={users.languages}
                       thumbnail={users.thumbnail}
