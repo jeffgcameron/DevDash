@@ -45,3 +45,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.connectHeader{
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-top: 7%;
+}

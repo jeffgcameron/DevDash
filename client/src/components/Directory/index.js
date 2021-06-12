@@ -2,6 +2,7 @@ import React from "react";
 import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 import MessageIcon from "../Message-Icon/messageIcon";
+import "./style.css";
 
 // Exporting both UsersList and UsersListItem from this file
 
