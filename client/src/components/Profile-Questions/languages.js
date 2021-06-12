@@ -4,7 +4,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
-import TextField from '@material-ui/core/TextField';
+// import TextField from '@material-ui/core/TextField';
 
 const languages = [
     {
@@ -70,7 +70,11 @@ function Languages() {
 
     const handleChange = (event) => {
         setLanguage(event.target.value);
+
     };
+
+
+    
     // const handleChangeMultiple = (event) => {
     //     const { options } = event.target;
     //     const value = [];
@@ -91,12 +95,13 @@ function Languages() {
                 <InputLabel id="demo-mutiple-name-label">Languages You Know</InputLabel>
                 <Select
                     labelId="demo-mutiple-name-label"
-                    id="demo-mutiple-name"
+                    id="languages-signup"
                     multiple
                     value={language}
                     onChange={handleChange}
                     input={<Input />}
                     MenuProps={MenuProps}
+                    type="checkbox"
                 >
                 {languages.map((option) => (
                     <MenuItem key={option.value} value={option.value}>

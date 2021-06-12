@@ -20,16 +20,18 @@ function BioAndGoals() {
     return (
         <form className={classes.root} noValidate autoComplete="off">
             <TextField
-                id="outlined-multiline-static"
+                id="bio-signup"
                 label="Tell us about yourself"
+                InputLabelProps={{shrink: true}}
                 multiline
                 rows={6}
                 defaultValue=""
                 variant="outlined"
             />
             <TextField
-                id="outlined-multiline-static"
+                id="goals-signup"
                 label="What are your development goals?"
+                InputLabelProps={{shrink: true}}
                 multiline
                 rows={6}
                 defaultValue=""

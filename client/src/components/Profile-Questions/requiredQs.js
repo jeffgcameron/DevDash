@@ -22,9 +22,10 @@ function Questions() {
         <>
             <form className={classes.root} noValidate autoComplete="off">
                 <div>
-                    <TextField required id="standard-required" label="First Name" />
-                    <TextField required id="standard-required" label="Last Name" />
-                    <TextField required id="standard-required" label="Email" />
+                    <TextField required id="lastname-signup" label="First Name" InputLabelProps={{shrink: true}}/>
+                    <TextField required id="firstname-signup" label="Last Name" InputLabelProps={{shrink: true}} />
+                    <TextField required id="email-signup" label="Email" InputLabelProps={{shrink: true}}/>
+                    <TextField required id="password-signup" label="Password" type="password" InputLabelProps={{shrink: true}}/>
                 </div>
             </form>
 

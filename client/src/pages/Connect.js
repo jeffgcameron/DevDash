@@ -70,18 +70,20 @@ function Connect() {
         <Row>
           <Col size="xs-12 md-12">
             {!users.length ? (
-              <h1 className="text-center">No users to Display</h1>
+              <h1 className="text-center">No users to display</h1>
             ) : (
               <UserList>
                 {users.map(users => {
                   return (
                     <UserListItem
-                      key={users.name}
+                      key={users._name}
+                      id={users._id}
                       name={users.name}
                       languages={users.languages}
                       thumbnail={users.thumbnail}
                       bio={users.bio}
                       strengths={users.strengths}
+                      email={users.email}
                     />
                   );
                 })}

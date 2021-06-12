@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const db = require("../models");
-const withAuth = require("../client/src/utils/auth")
+// const {User} =require("../models")
+// const withAuth = require("../client/src/utils/auth")
+const userController = require("../controllers/UserController")
 
 router.get("/user", (req, res) => {
   // Use a regular expression to search both languages and strength fields for req.query.q
@@ -10,9 +12,6 @@ router.get("/user", (req, res) => {
   .then(users => res.json(users))
   .catch(err => res.status(422).end());
 });
-
-
-
 
 
 
