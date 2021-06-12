@@ -1,0 +1,26 @@
+.card {
+    width: 50%;
+}
+
+/* body {
+    background-color: #f1f5fc;
+} */
+
+.card {
+    /* background-color: #faf6ff; */
+    border-radius: 10px;
+    border-color: #bdd1f3;
+    
+}
+
+.button-group {
+    margin-bottom: 0;
+}
+input {
+    border-color: #4077CE;
+    border-style: solid;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center !important;
+    width: 50%;
+}

@@ -1,14 +1,23 @@
-import React, { useState } from "react";
-import SearchForm from "./components/SearchForm";
-import SearchButton from "./components/SearchButton";
-import API from "./utils/API";
-import { UserList, UserListItem } from "./components/Directory";
-import { Container, Row, Col } from "./components/Grid";
+import React, { useState, useEffect } from "react";
+import SearchForm from "../components/SearchForm";
+import SearchButton from "../components/SearchButton";
+import API from "../utils/API";
+import { UserList, UserListItem } from "../components/Directory";
+import { Container, Row, Col } from "../components/Grid";
+import Navbar from "../components/Navbar/navbar"
+import Logo from "../components/DevDash-Logo/devlogo"
 
-function App() {
+function Connect() {
 
   const [users, setUsers] = useState([]);
   const [userSearch, setUserSearch] = useState("");
+
+  useEffect(() => {
+    API.getUsers()
+   .then(res => setUsers(res.data))
+   .catch(err => console.log(err));
+  }, []);
+
 
   const handleInputChange = event => {
     // Destructure the name and value properties off of event.target
@@ -27,23 +36,24 @@ function App() {
 
   return (
     <div>
-      <Nav />
-      <Jumbotron />
+      <Navbar />
+
       <Container>
+      <Logo />
+        <Row><h1 className="text-center connectHeader">Who would you like to connect with?</h1> </Row>
         <Row>
-          <Col size="md-12">
+          <Col size="md-8">
             <form>
-              <Container>
+             
                 <Row>
-                  <Col size="xs-9 sm-10">
+                  
                     <SearchForm
                       name="UserSearch"
                       value={userSearch}
                       onChange={handleInputChange}
                       placeholder="Search For a User"
                     />
-                  </Col>
-                  <Col size="xs-3 sm-2">
+            
                     <SearchButton
                       onClick={handleFormSubmit}
                       type="success"
@@ -51,27 +61,29 @@ function App() {
                     >
                         Search
                     </SearchButton>
-                  </Col>
+                
                 </Row>
-              </Container>
+           
             </form>
           </Col>
         </Row>
         <Row>
-          <Col size="xs-12">
+          <Col size="xs-12 md-12">
             {!users.length ? (
-              <h1 className="text-center">No Recipes to Display</h1>
+              <h1 className="text-center">No users to display</h1>
             ) : (
               <UserList>
                 {users.map(users => {
                   return (
                     <UserListItem
-                      key={users.name}
+                      key={users._name}
+                      id={users._id}
                       name={users.name}
                       languages={users.languages}
                       thumbnail={users.thumbnail}
                       bio={users.bio}
                       strengths={users.strengths}
+                      email={users.email}
                     />
                   );
                 })}
@@ -84,4 +96,4 @@ function App() {
   );
 }
 
-export default App;
+export default Connect;

@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+h1 {
+    color:  #9143F0 ;
+}
+h4 {
+    color:  #9143F0 ;
+    text-align: left;
+    margin-left: 10px;
+}
+p {
+    margin:10px;
+    color:  #4077CE ;
+}
+.card-container {
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-card {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 100%;
+}

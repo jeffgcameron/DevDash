@@ -1,0 +1,33 @@
+{
+    "development": {
+      "database": {
+        "url": "mongodb://localhost/devDashDB",
+        "options": {
+          "useNewUrlParser": true,
+          "useUnifiedTopology": true,
+          "serverSelectionTimeoutMS": 5000
+        }
+      }
+    },
+    "test": {
+      "database": {
+        "url": "mongodb://localhost/devdash_test",
+        "options": {
+          "useNewUrlParser": true,
+          "useUnifiedTopology": true,
+          "serverSelectionTimeoutMS": 5000
+        }
+      }
+    },
+    "production": {
+      "database": {
+        "url": "mongodb://localhost/devdash_production",
+        "options": {
+          "useNewUrlParser": true,
+          "useUnifiedTopology": true,
+          "serverSelectionTimeoutMS": 5000
+        }
+      }
+    }
+  }
+  
