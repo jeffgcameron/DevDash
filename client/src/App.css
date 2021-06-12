@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.card {
+/* .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 30px;
@@ -20,18 +20,18 @@ form {
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
-}
+} */
 
 .name-field {
   margin-bottom: 40px;
 }
 
-button {
+/* button {
   margin-top: 20px;
   padding: 10px;
   background: transparent;
   border-radius: 5px;
-}
+} */
 
 .render-chat {
   max-width: 350px;
@@ -48,16 +48,12 @@ span {
   color: black;
 } 
 
-
 .sign-in {
   color: #282c34;
   background: white;
   max-width: 400px;
   margin: 0 auto;
 }
-
-
-
 
 ul, li {
   text-align: left;
@@ -95,12 +91,13 @@ p {
   color: black;
 }
 
-img {
+/* img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin: 2px 5px;
-} */ 
+} */  */
+
 * {
   font-family: 'Comfortaa', cursive;
   margin: 0;
