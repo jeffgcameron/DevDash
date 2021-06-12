@@ -32,7 +32,8 @@ const signupFormHandler = async (event) => {
     languages
   ) {
     //need to add heroku route when deployed https://devdashboard.herokuapp.com/users
-    const response = await fetch("http://localhost:3001/users", {
+    //need to add heroku route when deployed http://localhost:3001/users
+    const response = await fetch("https://devdashboard.herokuapp.com/users", {
       method: "POST",
       body: JSON.stringify({
         name,
