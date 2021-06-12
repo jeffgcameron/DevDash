@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import Thumbnail from "../Thumbnail";
+import MessageIcon from "../Message-Icon/messageIcon";
 import API from "../../utils/API";
 import "./style.css";
 
@@ -83,7 +84,15 @@ function UserInfo(props) {
               </div>
             </Col>
         </Row>
-          
+        <Link to='#'
+              onClick={(e) => {
+                window.location = "mailto:" + user.email;
+                e.preventDefault();
+              }}>
+        
+              <MessageIcon />
+            </Link>
+          <br></br>
         <Link to="/user">← Back to Directory</Link>
       </Container>
     </div>
