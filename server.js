@@ -28,7 +28,6 @@ const sess = {
   cookie: {},
   resave: false,
   saveUninitialized: true,
- 
 };
 
 app.use(session(sess))

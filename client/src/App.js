@@ -1,6 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar/navbar"
+import Logo from "./components/DevDash-Logo/devlogo"
+import { AuthProvider } from "../src/components/chat-room/contexts/AuthContext";
+import Chats from "./components/chat-room/Chats"
+import Login from "./components/chat-room/login"
+import { STATES } from 'mongoose';
+// import Login from "./components/Login/login"
+// import Register from "./components/Register/register"
+// import Signup from "./pages/Signup"
 import Profile from "./pages/Profile";
 // import MessageIcon from "./components/Message-Icon/messageIcon"
 import Connect from "./pages/Connect";
@@ -10,12 +19,13 @@ import Info from "./pages/Info"
 
 
 function App() {
+  
   return (
     <Router>
       <div>
       <Switch>
           <Route exact path={["/login"]}>
-           <LoginPage />
+          <LoginPage />
           </Route>
         </Switch>
         <Switch>
@@ -38,6 +48,12 @@ function App() {
             <Info />
           </Route>
         </Switch>
+        <AuthProvider>
+          <Switch>
+            <Route exact path="/chats" component ={Chats}/>
+            <Route path="/chats/login" component={Login}/>
+          </Switch>
+        </AuthProvider>
       </div>
     </Router>
   );
