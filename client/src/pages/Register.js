@@ -9,7 +9,7 @@ function Signup() {
     <div>
       <Navbar />
       <Logo />
-        <Register />
+      <Register />
     </div>
   );
 }
