@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const apiRoutes = require("./routes/apiRoutes");
 const app = express();
 const routes = require("./routes");
+const {User} =require("./models")
 // const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -45,6 +46,17 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 app.use("/api", apiRoutes);
+
+
+app.get("/api/user/:id", function(req, res) {
+  User.findById(req.params.id)
+  .then(user => {
+    if(!user) { return res.status(404).end();}
+      return res.status(200).json(user);
+  })
+  .catch(err => next(err));
+
+})
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/devdashDB",

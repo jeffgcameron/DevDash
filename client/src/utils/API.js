@@ -5,5 +5,10 @@ import axios from "axios";
  export default {
   getUsers: function(query) {
     return axios.get("/api/user", { params: { q: query } });
-  }
+  },
+  getUser: function(id) {
+    return axios.get("/api/user/" + id);
+  },
 };
+
+
