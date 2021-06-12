@@ -48,7 +48,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // document.location.replace("/user");
+      document.location.replace("/user");
       console.log(bio);
       console.log(languages);
       console.log(firstName);

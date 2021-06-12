@@ -14,18 +14,5 @@ router.get("/user", (req, res) => {
 });
 
 
-router.get("/user/:id", (req, res) => {
-  // Use a regular expression to search both languages and strength fields for req.query.q
-  // using case insensitive match with 'i'. 
- db.User.findOne().or([{ 'languages': { $regex: new RegExp(req.query.q, 'i') }}, { 'strengths': { $regex:new RegExp(req.query.q, 'i') }}])
-  //languages: { $regex: new RegExp(req.query.q, 'i')}
-  .then(users => res.json(users))
-  .catch(err => res.status(422).end());
-});
-
-
-
-
-
 
 module.exports = router;
