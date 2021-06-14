@@ -26,6 +26,7 @@ function Questions() {
                     <TextField required id="firstname-signup" label="Last Name" InputLabelProps={{shrink: true}} />
                     <TextField required id="email-signup" label="Email" InputLabelProps={{shrink: true}}/>
                     <TextField required id="password-signup" label="Password" type="password" InputLabelProps={{shrink: true}}/>
+                    <TextField id="github" label="Github" InputLabelProps={{shrink: true}}/>
                 </div>
             </form>
 
