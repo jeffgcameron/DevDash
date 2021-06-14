@@ -1,9 +1,9 @@
 .my-navbar {
     position: absolute;
-    width: 70px;
+    width: 85px;
     height: 100%;
     background-image: linear-gradient(#4077CE, #9143F0);
-    transition: 0.5s;
+    /* transition: 0.5s; */
     overflow: hidden;
 }
 
@@ -11,10 +11,10 @@
     padding-left: 0;
 }
 
-.my-navbar:hover,
+/* .my-navbar:hover,
 .my-navbar.active {
     width: 200px;
-}
+} */
 
 .my-navbar ul {
     position: absolute;
@@ -29,9 +29,9 @@
     list-style: none;
 }
 
-.my-navbar ul li:hover {
+/* .my-navbar ul li:hover {
     background: #9143F0
-}
+} */
 
 .fas {
     color: white;
@@ -42,7 +42,7 @@
     display: block;
     min-width: 60px;
     height: 60px;
-    line-height: 60px;
+    line-height: 8;
     text-align: left;
     padding-left: 25px;
 }
