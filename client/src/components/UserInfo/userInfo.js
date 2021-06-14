@@ -100,7 +100,8 @@ function UserInfo(props) {
                 e.preventDefault();
                 // <a href="https://github.com">github</a>
                 console.log("clicked")
-                window.location.href="https://github.com/" + user.github;
+                window.open("https://github.com/" + user.github, "_blank")
+                // window.location.href="https://github.com/" + user.github;
               }}>
               <GhIcon />
             </Link>

@@ -20,6 +20,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    github: {
+      type: String,
+      required: true,
+    },
     bio: {
       type: String,
       required: false,
