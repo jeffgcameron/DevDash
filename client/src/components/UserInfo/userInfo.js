@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import Thumbnail from "../Thumbnail";
 import MessageIcon from "../Message-Icon/messageIcon";
+import GhIcon from "../Message-Icon/githubIcon";
 import API from "../../utils/API";
 import "./style.css";
 
@@ -84,14 +85,26 @@ function UserInfo(props) {
               </div>
             </Col>
         </Row>
+        <Row className="buttonRow">
         <Link to='#'
               onClick={(e) => {
                 window.location = "mailto:" + user.email;
                 e.preventDefault();
               }}>
         
-              <MessageIcon />
+              <MessageIcon  />
             </Link>
+            
+            <Link to='#'
+              onClick={(e) => {
+                e.preventDefault();
+                // <a href="https://github.com">github</a>
+                console.log("clicked")
+                window.location.href="https://github.com/" + user.github;
+              }}>
+              <GhIcon />
+            </Link>
+            </Row>
           <br></br>
         <Link to="/user">← Back to Directory</Link>
       </Container>

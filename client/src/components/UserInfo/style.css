@@ -26,3 +26,6 @@ p {
     margin-right: 10px;
     width: 100%;
 }
+.buttonRow {
+    justify-content: center !important;
+}

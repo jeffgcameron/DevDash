@@ -2,6 +2,7 @@ import React from "react";
 import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 import MessageIcon from "../Message-Icon/messageIcon";
+import GhIcon from '../Message-Icon/githubIcon'
 import "./style.css";
 import { Link } from "react-router-dom";
 
@@ -38,11 +39,7 @@ export function UserListItem({
             <h3 className="directoy-name"><b>{name}</b></h3>
             </Link>
           </Col>
-          <Col size="xs-8 sm-1">
-            <h5><b>GitHub:</b></h5>
-            <p>{github}</p>
-          </Col>
-          <Col size="xs-8 sm-3">
+          <Col size="xs-8 sm-4">
             <h5><b>Bio:</b></h5>
             <p>{bio}</p>
           </Col>
@@ -70,8 +67,18 @@ export function UserListItem({
               }}>
               <MessageIcon />
             </Link>
-
+            <Link to='#'
+              onClick={(e) => {
+                e.preventDefault();
+                // <a href="https://github.com">github</a>
+                console.log("clicked")
+                window.location.href="https://github.com/" + github;
+              }}>
+              <GhIcon />
+            </Link>
+            
           </Col>
+         
         </Row>
       </Container>
     </li>
