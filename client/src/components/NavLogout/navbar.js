@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MenuItems } from "./menu-items";
 import './navbar.css';
 
-class Navbar extends Component {
+class NavLogout extends Component {
     render() {
         return(
             <div className="nav-container">
@@ -22,4 +22,4 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar
+export default NavLogout

@@ -3,7 +3,7 @@
     border-color: rgba(106, 106, 243, 0.664);
 }
 
-h3{
+.directory-name{
     color: #9143F0;
     font-size: 25px;
 }
@@ -11,4 +11,8 @@ h3{
 h5{
     color: #9143F0; 
     font-size: 15px;
+}
+
+.directory-center {
+    vertical-align: middle;
 }

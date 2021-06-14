@@ -20,6 +20,7 @@ const signupFormHandler = async (event) => {
   const weaknesses = document.querySelector("#weakness-signup").textContent;
   const languages = document.querySelector("#languages-signup").textContent;
   const name = lastName + " " + firstName;
+  const fail = document.querySelector(".fail")
 
   if (
     name &&
@@ -33,7 +34,7 @@ const signupFormHandler = async (event) => {
   ) {
     //need to add heroku route when deployed https://devdashboard.herokuapp.com/users
     //need to add heroku route when deployed http://localhost:3001/users
-    const response = await fetch("https://devdashboard.herokuapp.com/users", {
+    const response = await fetch("http://localhost:3001/users", {
       method: "POST",
       body: JSON.stringify({
         name,
@@ -59,9 +60,9 @@ const signupFormHandler = async (event) => {
       console.log(password);
       console.log(goals);
       console.log("Working");
-    } else {
-      alert(response.statusText);
-    }
+    } 
+  } else {
+    fail.textContent ="Please fill out all fields to create your account.";
   }
 };
 
@@ -97,7 +98,7 @@ function Register() {
 
             <div className="button-group form-group">
               <button
-                className="btn btn-primary"
+                className=" btn btn-primary"
                 type="submit"
                 onClick={signupFormHandler}
               >
@@ -117,6 +118,7 @@ function Register() {
                 Already have an account? Login here!
               </Link>
             </div>
+            <p className="fail"></p>
           </form>
         </div>
       </div>

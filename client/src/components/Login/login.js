@@ -16,7 +16,7 @@ const loginFormHandler = async (event) => {
 
     //need to add heroku route when deployed https://devdashboard.herokuapp.com/users/login
     //need to add heroku route when deployed http://localhost:3001/users/login
-    const response = await fetch("https://devdashboard.herokuapp.com/users/login", {
+    const response = await fetch("http://localhost:3001/users/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },

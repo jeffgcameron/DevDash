@@ -29,7 +29,7 @@ function App() {
           </Route>
         </Switch>
         <Switch>
-          <Route exact path={["/"]}>
+          <Route exact path={["/", "register"]}>
             <Signup />
           </Route>
         </Switch>

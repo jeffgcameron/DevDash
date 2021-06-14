@@ -25,8 +25,8 @@ function UserInfo(props) {
     <div>
       <Container fluid>
         <Row>
-          <Col size="sm-4"></Col>
-          <Col size="sm-4">
+          <Col size="sm-5"></Col>
+          <Col size="sm-2">
             <Thumbnail
               src={
                 user.thumbnail ||
@@ -34,7 +34,7 @@ function UserInfo(props) {
               }
             />
           </Col>
-          <Col size="sm-4"></Col>
+          <Col size="sm-5"></Col>
         </Row>
         <Row>
           <Col size="sm-12" className="user-name">

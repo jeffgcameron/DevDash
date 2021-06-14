@@ -34,7 +34,7 @@ export function UserListItem({
           </Col>
           <Col size="xs-8 sm-2">
             <Link to = {"user/" + id}>
-            <h3><b>{name}</b></h3>
+            <h3 className="directoy-name"><b>{name}</b></h3>
             </Link>
           </Col>
           <Col size="xs-8 sm-4">
