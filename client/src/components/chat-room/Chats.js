@@ -5,6 +5,7 @@ import { ChatEngine } from 'react-chat-engine';
 import { auth } from '../chat-room/firebase';
 import { useAuth } from '../chat-room/contexts/AuthContext';
 import axios from 'axios';
+import DevLogo from './logo/logo.png';
 
 const Chats = () => {
     const history = useHistory();
@@ -66,7 +67,7 @@ const Chats = () => {
         <div className="chats-page">
             <div className="nav-bar">
                 <div className="logo-tab">
-                    DevDash
+                    DevChat
                 </div>
                 <div onClick={handleLogout} className="logout-tab">
                     Logout
