@@ -21,7 +21,8 @@ export function UserListItem({
   languages,
   bio,
   strengths,
-  email
+  email,
+  github
 }) {
    //const getEmail = console.log(email)
   //email.map((item, index) => <a href={JSON.stringify(item)}>{console.log("my item:", item)}</a>)
@@ -37,7 +38,11 @@ export function UserListItem({
             <h3><b>{name}</b></h3>
             </Link>
           </Col>
-          <Col size="xs-8 sm-4">
+          <Col size="xs-8 sm-1">
+            <h5><b>GitHub:</b></h5>
+            <p>{github}</p>
+          </Col>
+          <Col size="xs-8 sm-3">
             <h5><b>Bio:</b></h5>
             <p>{bio}</p>
           </Col>

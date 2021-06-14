@@ -84,6 +84,7 @@ function Connect() {
                       bio={users.bio}
                       strengths={users.strengths}
                       email={users.email}
+                      github={users.github}
                     />
                   );
                 })}
