@@ -12,7 +12,7 @@ const userSeed = [
         bio: "Regional Manager of the Scranton branch of Dunder Miflin. Comedic genious. World's best boss",
         goals: "My goal as a developer is to create an app to store all the dundy winners",
         languages: ["html"],
-        strengths: ["Frontend Development", "Frontend Styling"],
+        strengths: ["Frontend Development, ", "Frontend Styling"],
         weaknesses: ["Holly"],
         password: "michael",
         github: "mscott"
@@ -23,8 +23,8 @@ const userSeed = [
         email: "dwight@paper.com",
         bio: "Assistant to Regional Manager. Beet farmer. Volunteer firefighter. Martial arts expert",
         goals: "Become the best paper salesman in the state of Pennsylvania ",
-        languages: ["node", "mongoose", "mySQL"],
-        strengths: ["Backend Development", "Data/Databases"],
+        languages: ["node, ", "mongoose, ", "mySQL"],
+        strengths: ["Backend Development, ", "Data/Databases"],
         weaknesses: ["Nothing"],
         password: "dwight",
         github: "dschrute"
@@ -35,7 +35,7 @@ const userSeed = [
         email: "jim@paper.com",
         bio: "Father of Cece and wife to Pam. Big Tuna",
         goals: "Balance of work and family time, while able to live comfortably",
-        languages: ["html", "css", "javascript", "react"],
+        languages: ["html, ", "css, ", "javascript, ", "react"],
         strengths: ["Cloud Computing"],
         weaknesses: ["Easily distracted by the receptionist"],
         password: "jim",
@@ -47,8 +47,8 @@ const userSeed = [
         email: "andy@paper.com",
         bio: "Cornell grad. Acapella member. Anger management graduate",
         goals: "Impress my father by creating an app that make me a lot of money so i can focus on my passion for singing",
-        languages: ["html", "css", "javascript"],
-        strengths: ["Data/Databases", "Cloud Computing"],
+        languages: ["html, ", "css, ", "javascript"],
+        strengths: ["Data/Databases, ", "Cloud Computing"],
         weaknesses: ["Living up to expectations"],
         password: "andy",
         github: "abernard"
@@ -72,7 +72,7 @@ const userSeed = [
         bio: "Head of HR. Love speding time with my daughter. Divorced",
         goals: "move to Costa Rica to live out my dreams",
         languages: ["javascript"],
-        strengths: ["Frontend Development", "Data/Databases"],
+        strengths: ["Frontend Development, ", "Data/Databases"],
         weaknesses: ["Standing up for myself"],
         password: "toby",
         github: "tflenderson"

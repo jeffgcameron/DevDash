@@ -3,13 +3,15 @@ import React from "react";
 import Logo from "../components/DevDash-Logo/devlogo"
 import UserInfo from "../components/UserInfo/userInfo"
 import NavLogout from "../components/NavLogout/navbar"
-
+import { Container } from "../components/Grid";
 function Info() {
   return (
 <div>
   <NavLogout />
+  <Container>
   <Logo />
   <UserInfo />
+  </Container>
 </div>
   )
 }
