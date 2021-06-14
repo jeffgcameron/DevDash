@@ -4,8 +4,9 @@ import SearchButton from "../components/SearchButton";
 import API from "../utils/API";
 import { UserList, UserListItem } from "../components/Directory";
 import { Container, Row, Col } from "../components/Grid";
-import Navbar from "../components/Navbar/navbar"
+import NavLogout from "../components/NavLogout/navbar"
 import Logo from "../components/DevDash-Logo/devlogo"
+
 
 function Connect() {
 
@@ -36,10 +37,11 @@ function Connect() {
 
   return (
     <div>
-      <Navbar />
-
+      <NavLogout />
+    
       <Container>
       <Logo />
+
         <Row><h1 className="text-center connectHeader">Who would you like to connect with?</h1> </Row>
         <Row>
           <Col size="md-8">

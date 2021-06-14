@@ -3,56 +3,57 @@
 } */
 
 .card {
-    /* background-color: #faf6ff; */
-    border-radius: 10px;
-    border-color: #bdd1f3;
-    
+  /* background-color: #faf6ff; */
+  border-radius: 10px;
+  border-color: #bdd1f3;
 }
 label {
-    font-family: 'Comfortaa', cursive !important;
-    color:  #9143F0 !important;
+  font-family: "Comfortaa", cursive !important;
+  color: #9143f0 !important;
 }
 input {
-    color:  #4077CE !important;
-    
+  color: #4077ce !important;
 }
 
 textarea {
-    color:  #4077CE !important;
+  color: #4077ce !important;
 }
 
 .MuiList-root {
-    color:  #4077CE !important;
+  color: #4077ce !important;
 }
 
 .MuiSelect-root {
-    color:  #4077CE !important;
+  color: #4077ce !important;
 }
 
+.login {
+  font-family: "Comfortaa", cursive !important;
+}
 
 h3 {
-    color:  #4077CE ;
+  color: #4077ce;
 }
 
 a {
-    color:  #9143F0 ;
+  color: #9143f0;
 }
 
 button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #4077CE !important;
-    border-color: #4077CE  !important;
-    color:  #faf6ff !important;
-    border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #4077ce !important;
+  border-color: #4077ce !important;
+  color: #faf6ff !important;
+  border-radius: 10px;
 }
 
 button:hover {
-    background-color: #9143F0 !important;
-    border-color: #9143F0 !important;
-    /* color:  #9143F0 !important; */
+  background-color: #9143f0 !important;
+  border-color: #9143f0 !important;
+  /* color:  #9143F0 !important; */
 }
 
 a:hover {
-    color:  #4077CE ;
+  color: #4077ce;
 }

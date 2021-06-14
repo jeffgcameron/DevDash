@@ -2,7 +2,7 @@
   "name": "devdash",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@material-ui/core": "^4.11.4",

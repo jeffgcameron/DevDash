@@ -1,12 +1,13 @@
 import React from "react";
-import Navbar from "../components/Navbar/navbar"
+// import Navbar from "../components/Navbar/navbar"
 import Logo from "../components/DevDash-Logo/devlogo"
 import UserInfo from "../components/UserInfo/userInfo"
+import NavLogout from "../components/NavLogout/navbar"
 
 function Info() {
   return (
 <div>
-  <Navbar />
+  <NavLogout />
   <Logo />
   <UserInfo />
 </div>

@@ -23,4 +23,12 @@ export const MenuItems = [
         cName: 'nav-links',
         
     },
+    {
+        icon: <span className="icon"><i className="fas fa-sign-out-alt"></i></span>,
+        iconCName: "fas fa-sign-out-alt",
+        title: 'Logout',
+        url: 'login',
+        cName: 'nav-links',
+        
+    },
 ]
