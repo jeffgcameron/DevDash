@@ -65,7 +65,7 @@
 
 ul, li {
   text-align: left;
-  /* list-style: none; */
+  list-style: none;
   color: #2f72da;
 }
 
@@ -82,8 +82,8 @@ h1 {
  justify-content: center;
 }
 
-/* 
-p {
+
+/* p {
   max-width: 500px;
   margin-bottom: 12px;
   line-height: 24px;
@@ -132,4 +132,8 @@ p {
   margin-bottom: 5%;
   margin-left: 12%;
   margin-top: 7%;
+}
+
+b {
+  color: #9143F0; 
 }

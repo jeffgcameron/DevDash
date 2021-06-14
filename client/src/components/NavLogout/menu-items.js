@@ -3,7 +3,7 @@ export const MenuItems = [
         icon: <span className="icon"><i className="fas fa-home"></i></span>,
         iconCName: "fas fa-home",
         title: 'Home',
-        url: 'user',
+        url: 'http://localhost:3000/user',
         cName: 'nav-links',
         
     },
