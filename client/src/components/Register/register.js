@@ -20,12 +20,15 @@ const signupFormHandler = async (event) => {
   const weaknesses = document.querySelector("#weakness-signup").textContent;
   const languages = document.querySelector("#languages-signup").textContent;
   const name = lastName + " " + firstName;
+  const github = document.querySelector("#github").value.trim();
+
   const fail = document.querySelector(".fail")
 
   if (
     name &&
     email &&
     password &&
+    github &&
     bio &&
     goals &&
     strengths &&
@@ -34,11 +37,12 @@ const signupFormHandler = async (event) => {
   ) {
     //need to add heroku route when deployed https://devdashboard.herokuapp.com/users
     //need to add heroku route when deployed http://localhost:3001/users
-    const response = await fetch("https://devdashboard.herokuapp.com/users", {
+    const response = await fetch("http://localhost:3001/users", {
       method: "POST",
       body: JSON.stringify({
         name,
         email,
+        github,
         password,
         bio,
         goals,
@@ -59,6 +63,7 @@ const signupFormHandler = async (event) => {
       console.log(email);
       console.log(password);
       console.log(goals);
+      console.log(github);
       console.log("Working");
     } 
   } else {

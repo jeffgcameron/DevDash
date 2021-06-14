@@ -11,6 +11,17 @@
     color: white !important;
 }
 
+.icon {
+   display: block !important;
+   margin-left: auto !important;
+   margin-right: auto !important;
+}
+.title {
+    text-align: center !important;
+    
+
+}
+
 .title {
     color: white !important;
     height: 5px;
@@ -68,4 +79,8 @@
     line-height: 60px;
     text-align: start;
     white-space: nowrap;
+}
+
+.icon {
+    padding-left: 35px !important;
 }

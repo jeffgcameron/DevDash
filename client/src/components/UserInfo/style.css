@@ -13,6 +13,11 @@ p {
     margin:10px;
     color:  #4077CE ;
 }
+
+/* div > p { display: inline-block; }
+div > p:after { content: ", " }
+div > p:last-of-type:after { content: "" } */
+
 .card-container {
     align-content: center;
     display: block;

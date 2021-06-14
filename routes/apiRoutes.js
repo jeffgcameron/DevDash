@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const db = require("../models");
 // const {User} =require("../models")
-// const withAuth = require("../client/src/utils/auth")
+const withAuth = require("../client/src/utils/auth")
 const userController = require("../controllers/UserController")
 
 router.get("/user", (req, res) => {

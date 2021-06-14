@@ -72,7 +72,8 @@ export function UserListItem({
                 e.preventDefault();
                 // <a href="https://github.com">github</a>
                 console.log("clicked")
-                window.location.href="https://github.com/" + github;
+                window.open("https://github.com/" + github, "_blank")
+                // window.location.href="https://github.com/" + github;
               }}>
               <GhIcon />
             </Link>
