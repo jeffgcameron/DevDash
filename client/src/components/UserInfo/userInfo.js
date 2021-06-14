@@ -85,17 +85,21 @@ function UserInfo(props) {
               </div>
             </Col>
         </Row>
-        <Row className="buttonRow">
-        <Link to='#'
+        <Row className="buttonRow" style={{'justify-content':"center"}}>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"><Link to='#'
               onClick={(e) => {
                 window.location = "mailto:" + user.email;
                 e.preventDefault();
               }}>
         
-              <MessageIcon  />
-            </Link>
-            
-            <Link to='#'
+              <MessageIcon />
+            </Link></Col>
+          <Col size="sm-1"><Link to='#'
               onClick={(e) => {
                 e.preventDefault();
                 // <a href="https://github.com">github</a>
@@ -104,7 +108,15 @@ function UserInfo(props) {
                 // window.location.href="https://github.com/" + user.github;
               }}>
               <GhIcon />
-            </Link>
+            </Link></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+          <Col size="sm-1"></Col>
+        
+            
+            
             </Row>
           <br></br>
         <Link to="/user">← Back to Directory</Link>
