@@ -20,12 +20,15 @@ const signupFormHandler = async (event) => {
   const weaknesses = document.querySelector("#weakness-signup").textContent;
   const languages = document.querySelector("#languages-signup").textContent;
   const name = lastName + " " + firstName;
+  const github = document.querySelector("#github").value.trim();
+
   const fail = document.querySelector(".fail")
 
   if (
     name &&
     email &&
     password &&
+    github &&
     bio &&
     goals &&
     strengths &&
@@ -39,6 +42,7 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({
         name,
         email,
+        github,
         password,
         bio,
         goals,
@@ -59,6 +63,7 @@ const signupFormHandler = async (event) => {
       console.log(email);
       console.log(password);
       console.log(goals);
+      console.log(github);
       console.log("Working");
     } 
   } else {
