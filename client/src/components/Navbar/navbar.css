@@ -7,14 +7,23 @@
     overflow: hidden;
 }
 
+.nav-words {
+    color: white !important;
+}
+
+.title {
+    color: white !important;
+    height: 5px;
+}
+
 .nav-ul {
     padding-left: 0;
 }
 
-.my-navbar:hover,
+/* .my-navbar:hover,
 .my-navbar.active {
     width: 200px;
-}
+} */
 
 .my-navbar ul {
     position: absolute;
@@ -41,7 +50,7 @@
     position: relative;
     display: block;
     min-width: 60px;
-    height: 60px;
+    height: 8;
     line-height: 60px;
     text-align: left;
     padding-left: 25px;

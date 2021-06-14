@@ -53,7 +53,7 @@ function Connect() {
                       name="UserSearch"
                       value={userSearch}
                       onChange={handleInputChange}
-                      placeholder="Search For a User"
+                      placeholder="Search For Languages or Strengths"
                     />
             
                     <SearchButton
