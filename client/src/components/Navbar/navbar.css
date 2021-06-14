@@ -7,6 +7,15 @@
     overflow: hidden;
 }
 
+.nav-words {
+    color: white !important;
+}
+
+.title {
+    color: white !important;
+    height:5px;
+}
+
 .nav-ul {
     padding-left: 0;
 }
