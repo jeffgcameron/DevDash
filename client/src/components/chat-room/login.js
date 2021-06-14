@@ -10,7 +10,7 @@ const Login = () => {
     return (
         <div id="login-page">
             <div id="login-card">
-                <h2>Welcome to DevDash-Connect!</h2>
+                <h2>Welcome to DevChat!</h2>
 
                 <br/>
 

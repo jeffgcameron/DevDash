@@ -1,9 +1,5 @@
-/* * {
-    font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-} */
-
 #login-page {
-    background-image: linear-gradient(#40a9ff, #096dd9);
+    background-image: linear-gradient(#4077CE, #9143F0);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -17,7 +13,7 @@
     left: calc(50vw - 210px);
     padding-top: 36px;
     padding-bottom: 66px;
-    width: 420px;
+    width: 450px;
     text-align: center;
     background-color: white;
     border-radius: 22px;
