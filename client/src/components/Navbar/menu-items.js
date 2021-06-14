@@ -18,8 +18,8 @@ export const MenuItems = [
     {
         icon: <span className="icon"><i className="fas fa-envelope"></i></span>,
         iconCName: "fas fa-envelope",
-        title: 'Contact Us',
-        url: '#',
+        title: 'DevChat',
+        url: 'chats/login',
         cName: 'nav-links',
         
     },

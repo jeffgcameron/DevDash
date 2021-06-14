@@ -7,14 +7,15 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/devdashDB");
 const userSeed = [
     {
         thumbnail: "",
-        name: "Micheal Scott",
-        email: "micheal@paper.com",
+        name: "Michael Scott",
+        email: "michael@paper.com",
         bio: "Regional Manager of the Scranton branch of Dunder Miflin. Comedic genious. World's best boss",
         goals: "My goal as a developer is to create an app to store all the dundy winners",
         languages: ["html"],
         strengths: ["Frontend Development", "Frontend Styling"],
         weaknesses: ["Holly"],
-        password: "micheal"
+        password: "michael",
+        github: "mscott"
     },
     {
         thumbnail: "",
@@ -25,7 +26,8 @@ const userSeed = [
         languages: ["node", "mongoose", "mySQL"],
         strengths: ["Backend Development", "Data/Databases"],
         weaknesses: ["Nothing"],
-        password: "dwight"
+        password: "dwight",
+        github: "dschrute"
     },
     {
         thumbnail: "",
@@ -36,7 +38,8 @@ const userSeed = [
         languages: ["html", "css", "javascript", "react"],
         strengths: ["Cloud Computing"],
         weaknesses: ["Easily distracted by the receptionist"],
-        password: "jim"
+        password: "jim",
+        github: "jhalpert"
     },
     {
         thumbnail: "",
@@ -47,7 +50,8 @@ const userSeed = [
         languages: ["html", "css", "javascript"],
         strengths: ["Data/Databases", "Cloud Computing"],
         weaknesses: ["Living up to expectations"],
-        password: "andy"
+        password: "andy",
+        github: "abernard"
     },
     {
         thumbnail: "",
@@ -58,18 +62,20 @@ const userSeed = [
         languages: ["html"],
         strengths: ["Frontend Development"],
         weaknesses: ["Althletics"],
-        password: "kevin"
+        password: "kevin",
+        github: "kmalone"
     },
     {
         thumbnail: "",
-        name: "Toby Flederson",
+        name: "Toby Flenderson",
         email: "toby@paper.com",
         bio: "Head of HR. Love speding time with my daughter. Divorced",
         goals: "move to Costa Rica to live out my dreams",
         languages: ["javascript"],
         strengths: ["Frontend Development", "Data/Databases"],
         weaknesses: ["Standing up for myself"],
-        password: "toby"
+        password: "toby",
+        github: "tflenderson"
     },
 ];
 
