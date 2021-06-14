@@ -8,6 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.list-item {
+  color: white !important;
+}
 
 /* .card {
   display: grid;
@@ -62,7 +65,7 @@
 
 ul, li {
   text-align: left;
-  list-style: none;
+  /* list-style: none; */
   color: #2f72da;
 }
 
@@ -79,8 +82,8 @@ h1 {
  justify-content: center;
 }
 
-
-/* p {
+/* 
+p {
   max-width: 500px;
   margin-bottom: 12px;
   line-height: 24px;
