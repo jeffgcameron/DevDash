@@ -16,3 +16,8 @@ h5{
 .directory-center {
     vertical-align: middle;
 }
+.col-xs-8{
+    display: block !important;
+   align-items: center !important;
+
+}
